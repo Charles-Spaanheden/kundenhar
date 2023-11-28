@@ -1,0 +1,45 @@
+.wrappuh {
+    display: grid;
+    grid-template-rows: 10vh 20vh 60vh 10vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: 
+    'nav nav'
+    'hed hed'
+    'sec art'
+    'se2 art'
+    'fot fot';
+    gap: 5px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #30E053;
+    text-align: center;
+}
+
+header {
+    grid-area: hed;
+    background-color:#15AB33;
+    text-align: center;
+}
+
+.se1 {
+    grid-area: sec;
+    background-image: url(../img/coolcode.png);
+    background: cover;
+}
+
+.se2 {
+    grid-area: se2;
+    background-image: url(../img/coolcode.png);
+    background: cover;
+}
+
+article {
+grid-area: art;
+}
+
+footer {
+    grid-area: fot;
+    background-color: #13BE62;
+}
