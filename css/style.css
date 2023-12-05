@@ -1,20 +1,30 @@
 .wrappuh {
     display: grid;
-    grid-template-rows: 10vh 20vh 60vh 10vh;
+    grid-template-rows: 15vh 40vh 60vh 60vh 20vh;
     grid-template-columns: 50vw 50vw;
     grid-template-areas: 
     'nav nav'
     'hed hed'
     'sec art'
-    'se2 art'
+    'se2 ar2'
     'fot fot';
     gap: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
     grid-area: nav;
     background-color: #30E053;
-    text-align: center;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size:x-large;
+    align-items: center;
 }
 
 header {
@@ -25,21 +35,32 @@ header {
 
 .se1 {
     grid-area: sec;
-    background-image: url(../img/coolcode.png);
-    background: cover;
+    background-image: url(../img/andrew_garfield_moonlight.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
 .se2 {
     grid-area: se2;
-    background-image: url(../img/coolcode.png);
-    background: cover;
+    background-image: url(../img/robert_pattinson_reaction.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
-article {
+.article {
 grid-area: art;
+font-size: larger;
 }
+
+.article2 {
+    grid-area: ar2;
+    font-size: larger;
+    }
 
 footer {
     grid-area: fot;
     background-color: #13BE62;
+    text-align: center;
 }
