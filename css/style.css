@@ -1,4 +1,6 @@
 .wrappuh {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-rows: 15vh 40vh 60vh 60vh 20vh;
     grid-template-columns: 50vw 50vw;
@@ -9,17 +11,228 @@
     'se2 ar2'
     'fot fot';
     gap: 5px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:monospace;
     margin: 0;
+    background-color: #2B332F;
+    overflow-x:hidden;
 }
+
+body {
+    margin:0
+}
+
+.cardwrapper { 
+    width: 100%;
+    display:grid;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    grid-template-rows: 15vh 25vh 50vh 50vh 20vh;
+    grid-template-areas:
+    'nv nv nv' 
+    'hd hd hd'
+    'c1 c2 c3'
+    'c4 c5 c6'
+    'ft ft ft';
+    background-color: #335241;
+    margin: 0;
+    gap:3px;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.nv {
+    grid-area: nv;
+    background-color: #28B869;
+}
+
+.hd {
+    grid-area: hd;
+    background-color:#38855A;
+}
+
+.ft {
+    grid-area: ft;
+    background-color:#38855A;
+}
+
+.divcard1 /* Python */ {
+    display: grid;
+    height: 92% ;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15vw;
+    grid-template-areas: 
+    'pic1 tex1 tex1';
+    border: #6B0034;
+    border-style: double;
+    background-color: #E0005D;
+}
+
+.pic1 {
+    grid-area:pic1;
+    background-image: url(../img/python\ logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+.tex1 {
+    grid-area: tex1;
+}
+
+.divcard2 /* C++ */{
+    display: grid;
+    height: 92%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15vw;
+    grid-template-areas: 
+    'pic2 tex2 tex2';
+    border: #6B0034;
+    border-style: double;
+    background-color: #E0005D;
+}
+.pic2 {
+    grid-area:pic2;
+    background-image: url(../img/c++\ logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+.tex2 {
+    grid-area: tex2;
+}
+
+.divcard3 /* C# */{
+    display: grid;
+    height: 92%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15vw;
+    grid-template-areas: 
+    'pic3 tex3 tex3';
+    border: #6B0034;
+    border-style: double;
+    background-color:#E0005D;
+}
+
+.pic3 {
+    grid-area:pic3;
+    background-image: url(../img/csharplogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+.tex3 {
+    grid-area: tex3;
+}
+
+.divcard4 /* Ruby */{
+    display: grid;
+    height: 92%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15vw;
+    grid-template-areas: 
+    'pic4 tex4 tex4';
+    border: #6B0034;
+    border-style: double;
+    background-color: #E0005D;
+}
+
+.pic4 {
+    grid-area:pic4;
+    background-image: url(../img/rubylogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+.tex4 {
+    grid-area: tex4;
+}
+
+.divcard5 /* HTML */{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15vw;
+    grid-template-areas: 
+    'pic5 tex5 tex5';
+    border: #6B0034;
+    border-style: double;
+    background-color: #E0005D;
+}
+
+.pic5 {
+    grid-area:pic5;
+    background-image: url(../img/html\ logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+.tex5 {
+    grid-area: tex5;
+}
+
+.divcard6 /* JavaScript */{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15vw;
+    grid-template-areas: 
+    'pic6 tex6 tex6';
+    border: #6B0034;
+    border-style: double;
+    background-color: #E0005D;
+}
+
+.pic6 {
+    grid-area:pic6;
+    background-image: url(../img/javascriptlogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
+}
+
+.tex6 {
+    grid-area: tex6;
+}
+
+.card1 {
+    grid-area:c1;
+}
+
+.card2 {
+    grid-area:c2;
+}
+
+.card3 {
+    grid-area:c3;
+}
+
+.card4 {
+    grid-area:c4;
+}
+
+.card5 {
+    grid-area:c5;
+}
+
+.card6 {
+    grid-area:c6;
+}
+
 
 p {
     font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.headp {
+    align-content: center;
 }
 
 nav {
     grid-area: nav;
-    background-color: #30E053;
+    background-color: #324C3F;
     text-align: right;
     display: flex;
     flex-direction: row-reverse;
@@ -29,23 +242,26 @@ nav {
 
 header {
     grid-area: hed;
-    background-color:#15AB33;
+    background-color:#067049;
     text-align: center;
 }
 
 .se1 {
     grid-area: sec;
-    background-image: url(../img/andrew_garfield_moonlight.gif);
+    background-image: url(../img/obie-fernandez-ycmP_C9Kmog-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    border: #15AB33;
+    border-style: solid;
+
 }
 
 .se2 {
     grid-area: se2;
-    background-image: url(../img/robert_pattinson_reaction.gif);
+    background-image: url(../img/codinglanguages2\ kopiera.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size:cover;
 }
 
@@ -61,6 +277,6 @@ font-size: larger;
 
 footer {
     grid-area: fot;
-    background-color: #13BE62;
+    background-color: #067049;
     text-align: center;
 }
